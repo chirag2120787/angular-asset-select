@@ -54,7 +54,6 @@ export class AssetSelectComponent implements OnInit {
       const url = `http://localhost:3000/names`;
       this.serverService.getNames(url, params).subscribe(response => response.names.forEach(name => {
         this.assets.push(name);
-        console.log(this.assets);
       }), error => (error));
     }
   }
