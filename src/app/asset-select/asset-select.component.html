@@ -1,7 +1,7 @@
 <mat-form-field>
-	<mat-select matInput placeholder="{{this.selectedValue}}" #assetSelect (click)= "registerPanelScrollEvent()">
-        <input matInput class="search-assets" placeholder ="Search" (keyup)="search($event.target.value)"/>  
-        <mat-option *ngFor="let asset of assets;let i = index" value="{{asset.name}}" (click) = "selectValue($event.target.value)">
+	<mat-select matInput placeholder="{{selectedValue}}" #assetSelect (click)= "registerPanelScrollEvent()">
+        <input matInput class="search-assets" placeholder ="Search" (keyup)="onSearchAssets($event?.target?.value)"/>  
+        <mat-option *ngFor="let asset of assets;" value="{{asset.name}}" (click) = "onSelectValue($event?.target?.value)">
             {{asset.name}}
         </mat-option>
 	</mat-select>
