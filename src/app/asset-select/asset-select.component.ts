@@ -35,7 +35,6 @@ export class AssetSelectComponent implements OnInit {
   }
 
   loadAllOnScroll(event) {
-    console.log(event.target.scrollTop)
     if (event.target.scrollTop > this.FETCH_MORE_SCROLL_POSITION) {
       this.CURRENT_PAGE = this.CURRENT_PAGE + 1;
       this.FETCH_MORE_SCROLL_POSITION = this.FETCH_MORE_SCROLL_POSITION + 100;
