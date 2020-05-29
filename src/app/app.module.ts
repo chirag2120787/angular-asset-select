@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { MatInputModule } from '@angular/material/input'
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
+import {MatCardModule} from '@angular/material/card';
 import { ServerService } from 'src/services/server.service';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -22,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatCardModule,
     MatAutocompleteModule,
     MatFormFieldModule,
     AppRoutingModule,
